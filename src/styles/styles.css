@@ -66,6 +66,10 @@ section {
     padding: 28px 8%;
 }
 
+a {
+    text-decoration: none;
+}
+
 .btn-default {
     border: none;
     display: flex;

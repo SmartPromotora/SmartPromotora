@@ -26,6 +26,9 @@
 
 .services-content {
     width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: var(--color-neutral-0);
     padding: 2rem .5rem 1.25rem 1.5rem;
     border-radius: .50rem;
@@ -93,10 +96,12 @@
 
 .services-modal-services {
     row-gap: 1rem;
+
 }
 
 .services-modal-service {
     display: flex;
+    padding: 10px;
 }
 
 .services-modal-title {
@@ -110,12 +115,12 @@
     top: 1rem;
     right: 1rem;
     font-size: 1.5rem;
-    color: var(--font-azul);
+    color: var(--color-primary-6);
     cursor: pointer;
 }
 
 .services-modal-icon {
-    color: var(--font-azul);
+    color: var(--color-primary-6);
     margin-right: var(--mb-0-25);
 }
 
