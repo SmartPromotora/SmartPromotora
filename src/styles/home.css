@@ -13,7 +13,7 @@
 }
 
 #cta .title {
-    font-size: 3rem;
+    font-size: 2.8rem;
     color: var(--color-neutral-1);;
 }
 
@@ -32,7 +32,7 @@
 
 #cta_buttons a {
     text-decoration: none;
-    color: var(--color-neutral-1);;
+    color: var(--color-neutral-0);;
 }
 
 #phone_button {

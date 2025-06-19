@@ -58,3 +58,12 @@ $(document).ready(function() {
         distance: '20%'
     })
 });
+
+function scrollCarousel(direction) {
+    const container = document.getElementById('dishes');
+    const scrollAmount = 300; // ajuste conforme o tamanho dos cards
+    container.scrollBy({
+        left: direction * scrollAmount,
+        behavior: 'smooth'
+    });
+}
