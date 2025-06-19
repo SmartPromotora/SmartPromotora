@@ -2,21 +2,49 @@
 @import url('header.css');
 @import url('home.css');
 @import url('menu.css');
+@import url('products.css');
 @import url('testimonials.css');
 @import url('footer.css');
 
 :root {
-  --color-primary-1: #d0e2ff; /* azul claro */
-  --color-primary-2: #a6c8ff;
-  --color-primary-3: #78a9ff;
-  --color-primary-4: #4589ff;
-  --color-primary-5: #0f62fe;
-  --color-primary-6: #0043ce; /* azul escuro */
+    --color-primary-1: #d0e2ff; /* azul claro */
+    --color-primary-2: #a6c8ff;
+    --color-primary-3: #78a9ff;
+    --color-primary-4: #4589ff;
+    --color-primary-5: #0f62fe;
+    --color-primary-6: #0043ce; /* azul escuro */
 
-  --color-neutral-0: #ffffff;
-  --color-neutral-1: #1d1d1d;
+    --color-neutral-0: #ffffff;
+    --color-neutral-1: #1d1d1d;
 
-  --color-gold: #ECC440;
+    --color-gold: #ECC440;
+
+    --big-font-size: 2rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1.125rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+
+    /*========== Peso da fonte ==========*/
+    --font-medium: 500;
+    --font-semi-bold: 600;
+
+    /*========== Margens dos botões ==========*/
+    --mb-0-25: .25rem;
+    --mb-0-5: .5rem;
+    --mb-0-75: .75rem;
+    --mb-1: 1rem;
+    --mb-1-5: 1.5rem;
+    --mb-2: 2rem;
+    --mb-2-5: 2.5rem;
+    --mb-3: 3rem;
+
+    /*========== Z index - Posição ==========*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-modal: 100;
 }
 
 * {
@@ -44,6 +72,7 @@ section {
     align-items: center;
     justify-content: center;
     background-color: var(--color-primary-5);
+    color: var(--color-neutral-0);
     border-radius: 12px;
     padding: 10px 14px;
     font-weight: 600;
@@ -86,5 +115,6 @@ section {
 }
 
 .section-subtitle {
-    font-size: 2.1875rem;
+    font-size: 2rem;
+    font-weight: 600;
 } 

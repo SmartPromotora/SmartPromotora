@@ -1,0 +1,137 @@
+@import url('styles.css');
+
+/* ================== Nossos Produtos =================== */
+
+.services {
+    width: 100%;
+}
+
+.section-title-service, .section-subtitle-service {
+    text-align: center;
+}
+
+.service-linha1 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+.services-container {
+    gap: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.services-content {
+    width: 200px;
+    background-color: var(--color-neutral-0);
+    padding: 2rem .5rem 1.25rem 1.5rem;
+    border-radius: .50rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.445);
+    transition: .3s;
+}
+
+.services-content:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.services-icon {
+    display: block;
+}
+
+.uil {
+    font-size: 22px;
+    color: var(--color-primary-6);
+}
+
+.services-button {
+    cursor: pointer;
+}
+
+.services-button:hover .button-icon {
+    transform: translateX(.25rem);
+    transition: .3s;
+    color: var(--font-azul);
+}
+
+.button-icon {
+    transition: .3s;
+}
+
+.button-flex {
+    display: inline-flex;
+    align-items: center;
+}
+
+
+.services-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba( 0, 0, 0, .5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    z-index: var(--z-modal);
+    opacity: 0; 
+    visibility: hidden;
+    transition: .3s;
+}
+
+.services-modal-content {
+    width: 400px;
+    position: relative;
+    background-color: var(--color-neutral-0);
+    padding: 1.5rem;
+    border-radius: .5rem;
+}
+
+.services-modal-services {
+    row-gap: 1rem;
+}
+
+.services-modal-service {
+    display: flex;
+}
+
+.services-modal-title {
+    font-size: var(--color-primary-6);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-1-5);
+}
+
+.services-modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    color: var(--font-azul);
+    cursor: pointer;
+}
+
+.services-modal-icon {
+    color: var(--font-azul);
+    margin-right: var(--mb-0-25);
+}
+
+.active-modal {
+    opacity: 1;
+    visibility: visible;
+}
+
+@media (max-width: 768px) {
+    .services-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .services-content {
+        width: 180px;
+    }
+} 
