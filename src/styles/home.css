@@ -14,15 +14,17 @@
 
 #cta .title {
     font-size: 2.8rem;
-    color: var(--color-neutral-1);;
+    color: var(--color-neutral-0);;
 }
 
 #cta .title span {
-    color: var(--color-primary-6);
+    color: var(--color-neutral-0);
+    font-weight: 300;
 }
 
 #cta .description {
     font-size: 1.2rem;
+    color: var(--color-neutral-0);
 }
 
 #cta_buttons {
@@ -31,11 +33,27 @@
 }
 
 #cta_buttons a {
+    display: inline-block;
+    padding: 14px 36px;                       
+    background: var(--color-primary-5);       
+    border-radius: 40px;                      
     text-decoration: none;
-    color: var(--color-neutral-0);;
+    color: var(--color-neutral-0);            
+    font-weight: 700;                         
+    font-size: 18px;                          
+    border: none;
+    box-shadow: 0px 4px 20px rgba(15, 98, 254, 0.7); 
+    text-align: center;
+    transition: all 0.3s ease;
 }
 
-#phone_button {
+#cta_buttons a:hover {
+    background: var(--color-primary-6);       
+    box-shadow: 0px 6px 25px rgba(15, 98, 254, 0.8);
+    transform: translateY(-2px);              
+}
+
+/* #phone_button {
     display: flex;
     gap: 8px;
     align-items: center;
@@ -48,22 +66,39 @@
 
 #phone_button button {
     box-shadow: none;
-}
+} */
 
 #banner {
-    display: flex;
-    align-items: start;
-    justify-content: end;
+    position: relative;        /* Container relativo */
     width: 70%;
+    height: auto;
+}
+
+.img-fundo {
+    position: absolute;        /* Fica no fundo */
+    bottom: 0;
+    left: 200px;
+    right: 0;
+    width: 800px;
+    z-index: 1;
+}
+
+.img-sombra {
+    position: absolute;        /* Sobre a imagem de fundo */
+    bottom: 100px;
+    right: 150px;
+    width: 400px;
     z-index: 2;
 }
 
-#banner img {
-    height: 100%;
-    width: fit-content;
+.img-pessoa {
+    position: relative;
+    top: 6px;
+    width: 1000px;
+    z-index: 3;
 }
 
-.shape {
+/* .shape {
     background-color: var(--color-primary-2);
     width: 50%;
     height: 100%;
@@ -73,7 +108,7 @@
     top: 0;
     right: 0;
     z-index: 1;
-}
+} */
 
 @media screen and (max-width: 1170px) {
     #home {

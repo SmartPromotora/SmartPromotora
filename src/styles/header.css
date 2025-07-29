@@ -3,8 +3,8 @@ header {
     padding: 15px 8%;
     position: sticky;
     top: 0;
-    background-color: var(--color-primary-2);
-    z-index: 3;
+    background-color: var(--color-primary-4);
+    z-index: 4;
 }
 
 #navbar {
@@ -16,6 +16,14 @@ header {
 
 .logopreto1 {
     width: 150px;
+}
+
+.btn-yuppie {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    color: var(--color-neutral-0);
+    font-weight: 600;
 }
 
 .img-yuppie {
@@ -37,8 +45,8 @@ header {
 }
 
 .nav-item.active a {
-    color: var(--color-neutral-1);
-    border-bottom: 3px solid var(--color-primary-4);
+    color: var(--color-neutral-0);
+    border-bottom: 3px solid var(--color-primary-1);
 }
 
 #mobile_btn {

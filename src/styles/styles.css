@@ -11,7 +11,7 @@
   --color-primary-3: #78a9ff;
   --color-primary-4: #4589ff;
   --color-primary-5: #0f62fe;
-  --color-primary-6: #0043ce; /* azul escuro */
+  --color-primary-6: #0131BF; /* azul escuro */
 
   --color-neutral-0: #ffffff;
   --color-neutral-1: #1d1d1d;
@@ -31,11 +31,15 @@ html {
 }
 
 body {
-    background-color: var(--color-primary-1);
+    background-color: var(--color-primary-6);
 }
 
 section {
     padding: 28px 8%;
+}
+
+a {
+    text-decoration: none;
 }
 
 .btn-default {
@@ -87,4 +91,5 @@ section {
 
 .section-subtitle {
     font-size: 2.1875rem;
+    color: var(--color-neutral-0);
 } 
