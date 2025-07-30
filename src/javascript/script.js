@@ -61,7 +61,7 @@ $(document).ready(function() {
 
 function scrollCarousel(direction) {
     const container = document.getElementById('dishes');
-    const scrollAmount = 300; // ajuste conforme o tamanho dos cards
+    const scrollAmount = 300; 
     container.scrollBy({
         left: direction * scrollAmount,
         behavior: 'smooth'
